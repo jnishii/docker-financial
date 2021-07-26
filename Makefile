@@ -1,4 +1,4 @@
-IMAGE=cellish/docker-financial
+IMAGE=jnishii/docker-financial
 VERSION=$(shell cat VERSION)
 
 release: 

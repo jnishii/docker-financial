@@ -5,7 +5,7 @@ DKUSER=jovyan
 DKHOME=/home/${DKUSER}
 PWD=`pwd`
 WD="${PWD}"
-IMAGE=cellish/docker-financial
+IMAGE=jnishii/docker-financial
 
 DKOPT="--rm \
 	-h ${DKNAME} \
