@@ -1,0 +1,12 @@
+# https://github.com/pmorissette/bt
+bt
+# https://github.com/enzoampil/fastquant
+fastquant
+yfinance
+# https://github.com/quantopian/pyfolio/issues/520
+git+https://github.com/quantopian/pyfolio
+yahoo_earnings_calendar
+yahoofinancials
+yahoo_fin
+watermark
+cufflinks

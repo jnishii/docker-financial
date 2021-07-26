@@ -1,0 +1,13 @@
+#numpy>=1.11.1,<2.0.0
+#pandas>=0.18.1,<1.0.0
+numpy
+pandas
+setuptools
+scipy
+scikit-image
+streamlit
+altair
+matplotlib 
+seaborn
+dfply
+plotly
