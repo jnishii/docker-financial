@@ -103,6 +103,10 @@ RUN python -m pip install jupytext --upgrade
 RUN jupyter nbextension install --py jupytext --sys-prefix
 RUN jupyter nbextension enable --py jupytext --sys-prefix
 
+RUN python -m pip install autopep8 --upgrade
+RUN jupyter nbextension install https://github.com/kenkoooo/jupyter-autopep8/archive/master.zip --user
+RUN jupyter nbextension enable jupyter-autopep8-master/jupyter-autopep8
+
 
 RUN jupyter nbextension enable highlighter/highlighter --sys-prefix
 RUN jupyter nbextension enable toggle_all_line_numbers/main --sys-prefix
