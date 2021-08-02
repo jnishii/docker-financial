@@ -5,6 +5,7 @@ numpy
 numerize
 pandas
 setuptools
+prettyprinter
 
 # data analysis
 scipy

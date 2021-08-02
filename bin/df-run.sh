@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DKNAME=jupyter
+DKNAME=jupyter-financial
 DKUSER=jovyan
 DKHOME=/home/${DKUSER}
 PWD=`pwd`
