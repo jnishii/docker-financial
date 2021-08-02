@@ -1,11 +1,16 @@
+# basic
 #numpy>=1.11.1,<2.0.0
 #pandas>=0.18.1,<1.0.0
 numpy
 numerize
 pandas
 setuptools
+
+# data analysis
 scipy
 scikit-image
+
+# visualization
 streamlit
 altair
 matplotlib 
