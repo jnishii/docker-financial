@@ -19,3 +19,6 @@ seaborn
 dfply
 plotly
 vega_datasets
+
+# pdf conversion
+dataframe_image
