@@ -1,7 +1,7 @@
 # https://github.com/pmorissette/bt
 bt
 # https://github.com/enzoampil/fastquant
-fastquant
+#fastquant
 yfinance
 # https://github.com/quantopian/pyfolio/issues/520
 git+https://github.com/quantopian/pyfolio

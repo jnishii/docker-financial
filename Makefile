@@ -21,5 +21,9 @@ run:
 ps:
 	docker ps -a
 
+save:
+	docker save -o docker-financial.tar ${IMAGE}
+
+
 clean:
 	rm *~

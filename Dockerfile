@@ -53,10 +53,12 @@ RUN python -m pip install --upgrade pip
 COPY requirements_py.txt /tmp/
 COPY requirements_jupyter.txt /tmp/
 COPY requirements_financial.txt /tmp/
+COPY requirements_misc.txt /tmp/
 
 RUN python -m pip install -r /tmp/requirements_py.txt
 RUN python -m pip install -r /tmp/requirements_jupyter.txt
 RUN python -m pip install -r /tmp/requirements_financial.txt
+RUN python -m pip install -r /tmp/requirements_misc.txt
 
 
 # Step 2: install zipline & watermark
@@ -149,7 +151,11 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini.asc /
 # && gpg --batch --verify /tini.asc /tini
 RUN chmod a+rx /tini
 
-# Step 8: Configure container startup
+# Step 8: Install other staffs
+
+# Step 9: Configure container startup
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN apt install -y ./google-chrome-stable_current_amd64.deb
 
 ENTRYPOINT ["/tini", "-g", "--"]
 CMD ["jupyter.sh"]
