@@ -24,6 +24,9 @@ ps:
 save:
 	docker save -o docker-financial.tar ${IMAGE}
 
+push:
+	docker push ${IMAGE}:${VERSION}
+
 
 clean:
 	rm *~

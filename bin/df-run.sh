@@ -65,7 +65,9 @@ runJupyterBG(){
 }
 
 runJupyterFG(){
-	open -a /Applications/Google\ Chrome.app "http://127.0.0.1:8888/" 
+	if [ -d "/Applications/Google\ Chrome.app" ]; then
+		open -a /Applications/Google\ Chrome.app "http://127.0.0.1:8888/" 
+	fi
 	docker run -it ${DKOPT} ${IMAGE} 
 	}
 
